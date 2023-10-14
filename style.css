@@ -1,0 +1,36 @@
+
+.container {
+    display: block;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    top: 0;
+}
+
+.nav-bar-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-list-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-list {
+    color: blue;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+a {
+    text-decoration: none;
+}
