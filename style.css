@@ -71,6 +71,46 @@ a {
     border-radius: 10px;
     border-color: blue;
     background-color: bisque;
-    height: 510px ;
+    height: 400px ;
+    color: rgb(39, 42, 45);
+    text-align: center;
 }
 
+.Nos_Escolher{
+    align-items: center;
+    border-radius: 10px;
+    border-color: blue;
+    background-color: rgb(172, 169, 165);
+    height: 400px ;
+    color: azure;
+}
+
+.course{
+    align-items: center;
+    border-radius: 10px;
+    border-color: rgb(40, 40, 71);
+    height: 400px ;
+    color: rgb(14, 2, 192);
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.course .course-card{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    border-radius: 12px;
+    border-color: blue;
+    margin: 1rem;
+}
+
+.course .course-card .card{
+    background-color: antiquewhite;
+    border-radius: 2%;
+    width: 33%;
+    
+}
+.course .course-card :hover{
+    background-color: rgb(165, 159, 149);
+    transform: translateY(-1rem);
+    transition-duration: 1.3s;
+}
