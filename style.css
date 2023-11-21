@@ -167,6 +167,12 @@ a {
     border-radius: 12px;
 }
 
+
+.Nos_Escolher .course-card :hover{
+    transform: translateY(-0.5rem);
+    transition-duration: 0.7s;
+}
+
 .Nos_Escolher .course .course-card .card{
     background-color: rgb(255, 255, 255);
     border-radius: 2%;
