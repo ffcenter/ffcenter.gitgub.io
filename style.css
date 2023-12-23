@@ -107,11 +107,12 @@ a {
 
 /* Controlling the image in the about block*/
 #about_total #about_img{
-    width: 300%;
+    width: 130%;
     border-radius: 10px;
     background-color: rgb(144, 144, 234);
     padding: 2px;
     border: dotted blue 2px;
+    
 }
 
 #about_total #about_img img{
@@ -519,21 +520,23 @@ a {
     
     /* Controlling the image in the about block*/
     #about_total #about_img{
-        width: 100%;
+        width: 200%;
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         padding: 1px;
         /* border: dotted blue 2px; */
+        justify-content: space-evenly;
+        height: 300px;
     }
     #about_total #about_img .img2{
         display: block;
     }
     
     #about_total #about_img img{
-        width: 50%;
+        width: 100%;
         margin-top: 0.2rem;
         border-radius: 10px;
-        height: 50%;
+        height: 49%;
     }
     
     #about_total #about_text{
