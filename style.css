@@ -530,10 +530,10 @@ a {
     }
     
     #about_total #about_img img{
-        width: 100%;
+        width: 50%;
         margin-top: 0.2rem;
         border-radius: 10px;
-        height: 49%;
+        height: 50%;
     }
     
     #about_total #about_text{
