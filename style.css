@@ -121,10 +121,10 @@ a {
     border-radius: 10px;
     height: 410px;
 }
-
-#about_total #about_img .img2{
-    display: none;}
-
+#about_total #about_img2 .about_img2{
+    display: none;
+    
+}
 
 #about_total #about_text{
    text-align: center;
@@ -307,84 +307,106 @@ a {
 }
 
 
-.footer{
-    text-align: center;
-    height: 50%px ;
-    padding-bottom: 3rem;
-    color: blue;
-    background-color: #ffffff;
-    align-items: center;
-}
-
-.footer .left {
-    display: flex;
-    justify-content: space-evenly;
+/* ---------Footer section ---------------------- */
+.footer_all{
     width: 100%;
-    margin-bottom: 2rem;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border:dotted  2px rgb(25, 0, 166);
 }
 
-.footer .left h3{
-    font-size: 100%;
-    margin-top: -2rem;
+.footer_all .left{
+    width: 50%;
+    border-right: dotted 2px  rgb(25, 0, 166);
 }
 
-.footer .left #ptext{
+.footer_all .left .contato h3{
     text-align: center;
-    color: rgb(59, 59, 65);
-    height:auto;
-    width: 92%;
+    padding: 1rem;
+    color: blue;
+    font-size: 40px;
+}
+
+.footer_all .left .contato #ptext h4{
+    margin: 0.3rem;
+    font-size: 25px;
 }
 
 
-
-.footer .left #ptext h4{
-   display: inline-flex;
-   margin: 0.6rem;
+.footer_all .left .contato #ptext h4 address{
+   word-wrap: break-word;
     
 }
 
-
-.footer .left #ptext  address{
-    margin-left: 4rem;
-     
- }
-
- 
-.footer .left #ptext_location iframe  {
-    width: 90%;
-    height: 100%;
-    
-     
- }
-
-
-
-.footer .left .rede-img .rede_txt{
-    display: inline-block;
-    margin-right: 3rem;
-}
-
-
-.footer .left .rede-img .rede_txt img{
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    margin-left: 1rem;
+.footer_all .left .contato #ptext address{
+    margin: 0.2rem;
     justify-content: space-around;
+    display: flex;
 }
 
-.footer .left .contato , .redes,.location {
-    width: 33%;
-    height:170px;
-    overflow-wrap: break-words;
-    border-right: dotted 3px blue;
+
+
+
+/* --------------Redes parte, Right side of the code---------------- */
+.footer_all .redes{
+    width: 50%;
+    height: fit-content;
+    margin-left: 3rem;
+    
+}
+
+.footer_all .redes h3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 40px;
+    color: blue;
+}
+
+.footer_all .redes .rede-img{
+   display: flex;
+   justify-content: space-around;
+   margin-left: 3%;
+   width: 100%;
+}
+
+
+.footer_all .redes .rede-img img{
+    border-radius: 100%;
+    height: 60%;
+    width: 60%;
+    
+    
+}
+
+.footer_all .redes .rede-img #face{
+    border-radius: 100%;
+    height: 40%;
+    width: 40%; 
+}
+
+
+.footer_all .redes .rede-img h5{
+    font-size: 18px;
+    justify-content: space-around;
+    text-wrap: balance;
+    margin: 0.6rem;
+    
+    
+}
+
+.footer_all .redes .rede-img .rede_txt{
+    text-wrap:pretty;
 }
 
 .subsection {
     bottom: 0;
     text-align: centers;
-  }
-
+    justify-content: center;
+    margin-left: 40%;
+    font-size: large;
+    color: blue;
+}
 
 
 
@@ -496,8 +518,11 @@ a {
 
     .Sobre_Nos{
         background-color: rgb(255, 255, 255);
-        height: 350px ;
+        height: 370px ;
         text-align: center;
+        margin-bottom: 7rem;
+        padding-bottom: 1rem;
+        width: 100%;
     }
     
     .Sobre_Nos #about_text #hd{
@@ -511,7 +536,7 @@ a {
     
     /* sizing image and text in the same block*/
     #about_total {
-        display: flexs;
+        display: inline-block;
         background-color: rgb(255, 255, 255);
         width: auto;
         border-radius: 2rem;
@@ -527,9 +552,18 @@ a {
         /* border: dotted blue 2px; */
         justify-content: space-evenly;
         height: 300px;
+        display: none;
     }
-    #about_total #about_img .img2{
+
+    #about_total #about_img2 .about_img2{
         display: block;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+        margin-bottom: 0.5rem;
+
     }
     
     #about_total #about_img img{
@@ -562,6 +596,7 @@ a {
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         padding-bottom: 1rem;
+        width: 100%;
     }
 
     .Nos_Escolher #hd{
@@ -589,7 +624,7 @@ a {
         height: 99%;
         width: 99%;
         border-radius: 12px;
-        margin-bottom : 1.5rem;
+        margin-bottom : 2rem;
         
     }
     
@@ -606,8 +641,9 @@ a {
         width: 100%;
         height: 90%;
         font-size: 14px;
-        margin: 5px;
+        /* margin: 5px; */
         border: dotted blue 1px;
+        margin-bottom : 2rem;
        
     }
     
@@ -626,11 +662,12 @@ a {
     
     
     .Nos_Escolher .course .course-card .card h3{
-       font-size: 30px;
+       font-size:18px;
        margin-bottom: 1rem;
     
     }
     
+
 
     /* -----------Courses Section ---------------- */
     .courses{
@@ -645,13 +682,13 @@ a {
 
 
     .courses #hd{
-        font-size: 20px;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: blue;
         border-block: solid 0.2rem rgb(194, 194, 241);
         margin-right: 34%;
         margin-left: 34%;
         margin-bottom: 0.3rem;
+        font-size: 20px;
     }
 
 
@@ -677,11 +714,12 @@ a {
     .courses .course-card .card{
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
-        font-size: 20px;
+        font-size: 16px;
         margin: 2px;
         border: dotted blue 1px;
         height: 100%;
         width: 100%;
+        margin-bottom : 2rem;
     }
 
 
@@ -699,87 +737,101 @@ a {
         transition-duration: 0.7s;
     }
 
+    .courses .course-card .card  h1{
+        font-size: 16px;
+     }
+
+
 
   /*--------------Footer section----------------------------*/
-  .footer_all{
-    display: inline-table;
-  }
-    .footer{
-        text-align: center;
-        height: 50px ;
-        padding-bottom: 2rem;
-        color: blue;
-        background-color: #ffffff;
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    .footer .left {
-        display: flex;
-        justify-content: space-evenly;
+    .footer_all{
         width: 100%;
-        margin-bottom: 2rem;
+        height: fit-content;
+        /* background-color: bisque; */
+        display: flex;
     }
 
-    .footer .left h3{
-        font-size: 100%;
+    .footer_all .left{
+        width: 50%;
+        
     }
 
-    .footer .left #ptext{
+    .footer_all .left .contato h3{
         text-align: center;
-        color: rgb(59, 59, 65);
-        height:auto;
-        width: 92%;
-        display: inline-table;
+        padding: 1rem;
+        font-size: 20px;
     }
 
-
-
-    .footer .left #ptext h4{
-        display: inline-flex;
-        margin: 0.6rem;
-        
+    .footer_all .left .contato #ptext {
+        margin: 0.3rem;
+        font: 18px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-
-    .footer .left #ptext  address{
-        margin-left: 4rem;
-        display: inline-table;
-        
+    .footer_all .left .contato #ptext h4{
+        word-break: break-word;
+        font-size: 15px;
     }
-
+    .footer_all .left .contato #ptext h4 address{
+        word-break: break-word;
+        font-size: 14px;
+    }
     
-    .footer .left #ptext_location iframe  {
-        width: 90%;
-        height: 100%;        
+
+
+    /* --------------Redes parte, Right side of the code---------------- */
+    .footer_all .redes{
+        width: 50%;
+        height: 300px;
+        right: 0;
+        
     }
 
-
-    .footer .left .rede-img .rede_txt{
-        display: inline-block;
-        margin-right: 3rem;
+    .footer_all .redes h3{
+        text-align: center;
+        padding: 1rem;
+        font-size: 20px;
     }
 
+    .footer_all .redes .rede-img{
+       height:fit-content;
+       overflow-x: hidden;
+       text-wrap: balance;
+       display: block;
+    }
+    
 
-    .footer .left .rede-img .rede_txt img{
+    .footer_all .redes .rede-img img{
         border-radius: 100%;
-        width: 50px;
-        height: 50px;
-        margin-left: 1rem;
-        justify-content: space-around;
+        height: 12%;
+        width: 12%;
+
     }
 
-    .footer .left .contato , .redes,.location {
-        width: 33%;
-        height:170px;
-        overflow-wrap: break-words;
-        border-right: dotted 3px blue;
+    .footer_all .redes .rede-img .rede_txt{
+       display: flex;
+       justify-content: space-evenly ;
+       margin-bottom: 1rem;
+       height: fit-content;
+
     }
+    
+    .footer_all .redes .rede-img #face{
+        border-radius: 100%;
+        height: 12%;
+        width: 12%; 
+    }
+
+    .footer_all .redes .rede-img h5{
+        font-size: 70%;
+    }
+
 
     .subsection {
         bottom: 0;
         text-align: centers;
+        justify-content: center;
+        margin-left: 30%;
     }
 
   }
