@@ -22,6 +22,10 @@
     height: 60px;
 }
 
+.logo-image2{
+    display: none;
+}
+
 .nav-bar-content {
     display: flex;
     justify-content:space-around;
@@ -44,7 +48,6 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-
     margin-left: 15px;
     text-align: left;
 }
@@ -117,6 +120,10 @@ a {
     border-radius: 10px;
     height: 410px;
 }
+
+#about_total #about_img .img2{
+    display: none;}
+
 
 #about_total #about_text{
    text-align: center;
@@ -380,8 +387,395 @@ a {
 
 
 
-
-
-  /* MEDIA QUERY FOR ALL PHONE SIZES */
+  /*-------------- MEDIA QUERY FOR ALL PHONE SIZES--------------------- */
          /* And */
-/* Media query for smaller screens */
+  /* Media query for smaller screens */
+
+  #menu-btn {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+   
+    .logo {
+        display: none;
+        margin: 0px;
+    }
+
+    .logo_img2 {
+        width: 100%;
+        background-color: rgb(220, 220, 209);
+        display:flex ;
+        position: absolute;
+        margin-bottom: 1rem;
+        top:0;
+    }
+
+    .logo-image2 {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        border: solid 1px lightblue;
+        display:flex ;
+        margin-right: 87%; 
+    }
+
+    #menu-btn{
+        display: block;
+        margin-top: 0.4rem;
+        color: blue;
+        font-size: 20px;
+    }
+
+    .header_container .header  .active{ 
+        position: fixed;
+        right: 0;
+        overflow-y:auto; 
+        width: fit-content;
+        border-bottom-left-radius: 20%;
+        margin-top: 2rem;
+        transition: 0.7s ease;
+        transform:translateX(-0.1rem);
+        margin-right: 0.1rem;
+
+    }  
+
+
+    .header_container .nav-list-content-first{
+        width:0px; 
+        height: 0px; 
+    } 
+    
+    
+    .header_container .nav-list-content {
+        display: block;
+        list-style-type: none;
+        border-bottom-left-radius: 20%;
+        height: 20%;
+        width: fit-content;
+        padding: 0.2rem;
+        background-color: rgb(220, 220, 209);
+
+    }
+    
+    .header_container .nav-list {
+        color:blue;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+
+    } 
+    
+    .header_container .nav-list-content-first #estude{
+        color:#654794;
+        border:solide 2px;
+        padding: 2px;
+        border: solid 1px rgb(135, 202, 27);
+        border-radius: 10px;
+        background-color: rgb(210, 208, 212);
+
+    }
+
+        
+    .img{
+        display: flex;
+        margin-right: -0.5rem;
+    }
+
+    .img img{
+        margin-top: 2.8rem;
+        width: 100%;
+        height:10%;
+        margin-bottom: -3.5rem;
+    }
+
+
+    /*----------------------- SOBRE NÓS SECTION  -------------------------*/
+
+    .Sobre_Nos{
+        background-color: rgb(255, 255, 255);
+        height: 350px ;
+        text-align: center;
+    }
+    
+    .Sobre_Nos #about_text #hd{
+        font-size: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+        border-block: solid 0.2rem rgb(176, 176, 180);
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    /* sizing image and text in the same block*/
+    #about_total {
+        display: flexs;
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        border-radius: 2rem;
+        text-align: center; 
+    }
+    
+    /* Controlling the image in the about block*/
+    #about_total #about_img{
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 1px;
+        /* border: dotted blue 2px; */
+    }
+    #about_total #about_img .img2{
+        display: block;
+    }
+    
+    #about_total #about_img img{
+        width: 100%;
+        margin-top: 0.2rem;
+        border-radius: 10px;
+        height: 49%;
+    }
+    
+    #about_total #about_text{
+       text-align: center;
+       width: 50;
+       background-color: rgb(255, 255, 255);
+       margin: 5px;
+       align-items: center;
+       border: dotted blue 1.2px;
+    }
+    
+    #about_total #about_text p{
+        font-size: 16px;
+        text-align:left;
+        width: 50;
+        background-color: rgb(255, 255, 255);
+        margin-left: 2px;
+     }
+
+    /* Why choose Us secting */
+    .Nos_Escolher{
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 1rem;
+    }
+
+    .Nos_Escolher #hd{
+        display: block;
+        font-size: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+        border-block: solid 0.2rem rgb(194, 194, 241);
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .Nos_Escolher .course{
+        align-items: center;
+        border:solid dotted 1px;
+        color: rgb(14, 2, 192);
+        text-align: center;
+        margin-top: -0.3rem;
+        
+    }
+    
+    .Nos_Escolher .course-card{
+        display:inline-table;
+        justify-content: space-between;
+        height: 99%;
+        width: 99%;
+        border-radius: 12px;
+        margin-bottom : 1.5rem;
+        
+    }
+    
+    
+    .Nos_Escolher .course-card :hover{
+        transform: translateY(-0.5rem);
+        transition-duration: 0.7s;
+    }
+    
+    
+    .Nos_Escolher .course .course-card .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: 2%;
+        width: 100%;
+        height: 90%;
+        font-size: 14px;
+        margin: 5px;
+        border: dotted blue 1px;
+       
+    }
+    
+    .Nos_Escolher .course .course-card .card  p{
+        text-align: left;
+        margin-right: 8px;
+        margin-left: 8px;
+        color: rgb(22, 21, 21);
+     }
+     
+    
+     .Nos_Escolher .course .course-card .card .img_nos img{
+        width: 80%;
+        height: 40%;
+     }
+    
+    
+    .Nos_Escolher .course .course-card .card h3{
+       font-size: 30px;
+       margin-bottom: 1rem;
+    
+    }
+    
+
+    /* -----------Courses Section ---------------- */
+    .courses{
+        height: 100%;
+        color: rgb(14, 2, 192);
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        background-color: rgb(255, 255, 255);
+    }
+    
+
+
+    .courses #hd{
+        font-size: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+        border-block: solid 0.2rem rgb(194, 194, 241);
+        margin-right: 34%;
+        margin-left: 34%;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .courses .course-card .card  p{
+        text-align: left;
+        margin-right: 8px;
+        margin-left: 8px;
+        color: rgb(22, 21, 21);
+        text-wrap: balance;
+    }
+    
+
+    .courses .course-card{
+        display: inline-table;
+        justify-content: space-between;
+        height: 100%;
+        margin-top: 1rem;
+        padding-bottom: 3.6rem;
+    }
+
+
+    .courses .course-card .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: 2%;
+        font-size: 20px;
+        margin: 2px;
+        border: dotted blue 1px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .courses .course-card :nth-child(2) p{
+        margin-bottom: 5.5rem;
+    }
+
+
+    .courses .course-card :nth-child(3) p{
+        margin-bottom: 2.7rem;
+    }
+
+    .courses .course-card :hover{
+        transform: translateY(-0.5rem);
+        transition-duration: 0.7s;
+    }
+
+
+  /*--------------Footer section----------------------------*/
+  .footer_all{
+    display: inline-table;
+  }
+    .footer{
+        text-align: center;
+        height: 50px ;
+        padding-bottom: 2rem;
+        color: blue;
+        background-color: #ffffff;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .footer .left {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer .left h3{
+        font-size: 100%;
+    }
+
+    .footer .left #ptext{
+        text-align: center;
+        color: rgb(59, 59, 65);
+        height:auto;
+        width: 92%;
+        display: inline-table;
+    }
+
+
+
+    .footer .left #ptext h4{
+        display: inline-flex;
+        margin: 0.6rem;
+        
+    }
+
+
+    .footer .left #ptext  address{
+        margin-left: 4rem;
+        display: inline-table;
+        
+    }
+
+    
+    .footer .left #ptext_location iframe  {
+        width: 90%;
+        height: 100%;        
+    }
+
+
+    .footer .left .rede-img .rede_txt{
+        display: inline-block;
+        margin-right: 3rem;
+    }
+
+
+    .footer .left .rede-img .rede_txt img{
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        margin-left: 1rem;
+        justify-content: space-around;
+    }
+
+    .footer .left .contato , .redes,.location {
+        width: 33%;
+        height:170px;
+        overflow-wrap: break-words;
+        border-right: dotted 3px blue;
+    }
+
+    .subsection {
+        bottom: 0;
+        text-align: centers;
+    }
+
+  }
