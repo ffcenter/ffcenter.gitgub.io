@@ -5,107 +5,42 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/x-icon" href="images/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
   <title>English Class Registration</title>
-  <style>
-    /* Add your own styles here if needed */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #a39c9c;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-      text-align: left;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      box-sizing: border-box;
-    }
-
-    button {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .logo {
-        display: flex;
-        background-color: #ffffff;
-        border:dotted 3px blue;
-        height: 75px;
-        margin-top: 1rem;
-    }
-
-    .logo img{
-        width:70px;
-        height: 70px;
-        margin-left: 13rem;
-    
-
-    }
-
-    .logo h2{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 50px;
-        color: blue;
-        margin-top: -0.08rem;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
+
 <body>
-
-<form>
-    <div class="logo">
-        <h2>FFC</h2>
-        <img src="images/logo.png" alt="img2">
-    </div>
- 
-  <h2>Formulário de  Registração</h2>
-
-  <label for="fullName">Nome Completo:</label>
-  <input type="text" id="fullName" name="fullName" required>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="phone">Numero de contato</label>
-  <input type="tel" id="phone" name="phone" required>
-
-  <label for="level">Nível de  Proficiencia :</label>
-  <select id="level" name="level" required>
-    <option value="" disabled selected>Select your level</option>
-    <option value="beginner">Beginner</option>
-    <option value="intermediate">Intermediate</option>
-    <option value="advanced">Advanced</option>
-  </select>
-
-  <button type="submit">Submit</button>
-</form>
+  <div class="container_reg">
+    <form>
+      <div class="logo_reg">
+        <div class="logo_center">
+          <h2>FFC</h2>
+          <img src="images/logo.png" alt="img2">
+        </div>
+      </div>
+   
+    <h4>Formulário de  Registração</h4>
+  
+    <label for="fullName">Nome Completo:</label>
+    <input type="text" id="fullName" name="fullName" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone">Numero de contato</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <label for="level">Nível de  Proficiencia :</label>
+    <select id="level" name="level" required>
+      <option value="" disabled selected>Select your level</option>
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advanced">Advanced</option>
+    </select>
+  
+    <button type="submit">Submit</button>
+  </form>
+  </div>
 
 </body>
 </html>
