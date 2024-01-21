@@ -519,7 +519,7 @@ button:hover {
         background-color: rgb(220, 220, 209);
         display:flex ;
         position: absolute;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         top:0;
     }
 
@@ -545,7 +545,7 @@ button:hover {
         overflow-y:auto; 
         width: fit-content;
         border-bottom-left-radius: 20%;
-        margin-top: 2rem;
+        margin-top: 1rem;
         transition: 0.7s ease;
         transform:translateX(-0.1rem);
         margin-right: 0.1rem;
@@ -1012,55 +1012,5 @@ button:hover {
 
   }
 
-/* ==== FOR IPHONES SECTIONS ========================== */
-  /* Add this media query at the end of your CSS file */
-@media screen and (max-width: 480px) {
-    .logo {
-        display: none;
-        margin: 0px;
-    }
- 
-    .logo-image2 {
-        width: 100%;
-        background-color: rgb(220, 220, 209);
-        display: flex;
-        position: absolute;
-        margin-bottom: 1rem;
-        top: 0;
-    }
- 
-    .logo-image2 img {
-        border-radius: 100%;
-        width: 40px;
-        height: 40px;
-        border: solid 1px lightblue;
-        margin-right: 80%;
-    }
- 
-    #menu-btn {
-        display: block;
-        margin-top: 0.4rem;
-        color: blue;
-        font-size: 20px;
-    }
- 
-    .header_container .header .active {
-        position: fixed;
-        right: 0;
-        overflow-y: auto;
-        width: fit-content;
-        border-bottom-left-radius: 20%;
-        margin-top: 2rem;
-        transition: 0.7s ease;
-        transform: translateX(-0.1rem);
-        margin-right: 0.1rem;
-    }
- 
-    .header_container .nav-list-content-first {
-        width: 0px;
-        height: 0px;
-    }
- 
-    /* Add more adjustments for other elements based on your design */
- }
- 
+
+
