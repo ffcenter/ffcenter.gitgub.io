@@ -229,14 +229,33 @@
       </section>
     </main>
   </div>
-  <script>
+ 
+ <script>
     let  bnt = document.querySelector('#menu-bnt');
     let  header = document.querySelector('.nav-list-content');
     function btn_menu() {
       header.classList.toggle('active');
+      
     };
+   
+    // Add event listener to the button to toggle menu visibility
+    bnt.addEventListener('click', menu-bnt);
+    console.log("List here : ")
+    // Add event listener to items within the menu to hide it on click
+    // Use querySelectorAll to get all items
+    let navItems = document.querySelectorAll('.nav-list-content .nav-item');
+   
+    
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        header.classList.add('hidden');
+      });
+    });
 
+
+    
   </script>
+
 </body>
 </html>
 
