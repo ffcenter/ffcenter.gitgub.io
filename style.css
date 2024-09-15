@@ -86,14 +86,14 @@ a {
     margin-bottom: 2.3rem;
 }
 
-.Sobre_Nos #about_text #hd{
+/* .Sobre_Nos #about_text #hd{
     font-size: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: blue;
     border-block: solid 0.2rem rgb(176, 176, 180);
     width: 60%;
     margin-left: 20%;
-}
+} */
 
 /* sizing image and text in the same block*/
 #about_total {
@@ -236,7 +236,7 @@ a {
    margin-bottom: -1rem;
 }
 
-
+/* -----------Courses Here---------------- */
 
 .courses{
     height: 100%;
@@ -792,8 +792,10 @@ button:hover {
         display: inline-table;
         justify-content: space-between;
         width: 98%;
+        height: -3%;
         contain: content;
-        margin-bottom: -4rem;
+        /* margin-bottom: -4rem; */
+        background-color: #a39c9c;
     }
 
 
