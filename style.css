@@ -548,6 +548,10 @@ button:hover {
 
     } 
 
+    .header_container .header .hidden {
+        display: none;
+      }
+
     
 
 
@@ -789,7 +793,6 @@ button:hover {
         justify-content: space-between;
         width: 98%;
         contain: content;
-        height: 20%;
         margin-bottom: -4rem;
     }
 
@@ -800,9 +803,11 @@ button:hover {
         font-size: 16px;
         margin: 2px;
         border: dotted blue 1.6px;
-        height: 20%px;
         width: 99%;
+        height: 50px;
         margin-bottom : 1rem;
+        background-color: #a39c9c;
+        contain:content;
     }
 
     .courses .course-card :nth-child(1) p{

@@ -29,12 +29,12 @@
             <div class="nav-list-content-first">
               <ul class="nav-list-content">
                 <!-- <i class="bx bx-menu" id="menu-btn" onclick="btn_menu()"></i> -->
-                <li class="nav-list"><a href="#">Home</a></li>
-                <li class="nav-list"><a href="#Sobre_Nos">Sobre Nos</a></li>
-                <li class="nav-list"><a href="#Nos_Escolher">Nos Escolhe</a></li>
-                <li class="nav-list"><a href="#Courses">Cursos</a></li>
-                <li class="nav-list"><a href="#footer">Infos</a></li>
-                <li class="nav-list" id="estude"><a href="Register_form.html" target="_blank">Estude Conosco</a></li>
+                <li class="nav-list" onclick="btn_hide()"><a href="#">Home</a></li>
+                <li class="nav-list"  onclick="btn_hide()"><a href="#Sobre_Nos">Sobre Nos</a></li>
+                <li class="nav-list"  onclick="btn_hide()"><a href="#Nos_Escolher">Nos Escolhe</a></li>
+                <li class="nav-list"  onclick="btn_hide()" ><a href="#Courses">Cursos</a></li>
+                <li class="nav-list"  onclick="btn_hide()" ><a href="#footer">Infos</a></li>
+                <li class="nav-list" onclick="btn_hide()"  id="estude"><a href="Register_form.html" target="_blank">Estude Conosco</a></li>
               </ul>
             </div>
           </div>
@@ -231,29 +231,36 @@
   </div>
  
  <script>
-    let  bnt = document.querySelector('#menu-bnt');
-    let  header = document.querySelector('.nav-list-content');
-    function btn_menu() {
-      header.classList.toggle('active');
-      
-    };
-   
-    // Add event listener to the button to toggle menu visibility
-    bnt.addEventListener('click', menu-bnt);
-    console.log("List here : ")
-    // Add event listener to items within the menu to hide it on click
-    // Use querySelectorAll to get all items
-    let navItems = document.querySelectorAll('.nav-list-content .nav-item');
-   
-    
-    navItems.forEach(item => {
-      item.addEventListener('click', function() {
-        header.classList.add('hidden');
-      });
-    });
+   let btn = document.querySelector('#menu-btn');
+    let header = document.querySelector('.nav-list-content');
+    let isActive = false;  // Track the active state
 
+  // Function to toggle the menu's active state
+  function btnMenu() {
+    // Toggle the 'active' class and update isActive
+    isActive = header.classList.toggle('active');
+  }
 
-    
+  // Function to hide or show the menu
+  function btn_hide() {
+    if (isActive) {
+      // If active, hide the menu and set isActive to false
+      header.classList.toggle('hidden');
+      isActive = false;
+    } else {
+      // If not active, make the menu visible and set isActive to true
+      header.classList.remove('hidden');
+      isActive = header.classList.toggle('active');
+    }
+  }
+
+  // Attach event listeners to the button
+  btn.addEventListener('click', () => {
+    // Toggle the menu's visibility and active state
+    btn_hide();
+  });
+
+   
   </script>
 
 </body>
