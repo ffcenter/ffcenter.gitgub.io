@@ -672,7 +672,6 @@ button:hover {
 
     .Nos_Escolher{
         border-radius: 10px;
-        background-color:rgb(39, 11, 11);
         width: 100%;
         contain: content;
         height: fit-content; 
@@ -696,7 +695,6 @@ button:hover {
         color: rgb(14, 2, 192);
         margin-top: 0.3rem;
         contain: content;
-        background-color: #4caf50;
         width: auto;
         margin:0.1rem; 
     }
@@ -708,7 +706,7 @@ button:hover {
         width: 99%;
         border-radius: 12px;
         margin-bottom : 2rem;  
-        background-color: aquamarine; 
+        /* background-color: aquamarine;  */
     }
     
      
@@ -721,7 +719,7 @@ button:hover {
     .Nos_Escolher .course .course-card .card{
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
-        width: 100%;
+        width: 98%;
         height: fit-content;
         font-size: 14px;
         border: dotted blue 1px;
