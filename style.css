@@ -762,7 +762,7 @@ button:hover {
         padding-top: 0.2rem;
         contain:content;
         margin-top:-1.5rem;
-        background-color: #654794;
+        /* background-color: #654794; */
     }
     
 
@@ -777,7 +777,7 @@ button:hover {
     }
 
 
-    .courses .course-card .card  p{
+    .courses .course-card1 .card1  p{
         text-align: left;
         margin-right: 8px;
         margin-left: 8px;
@@ -788,18 +788,17 @@ button:hover {
     }
     
 
-    .courses .course-card{
+    .courses .course-card1{
         display: inline-table;
-        justify-content: space-between;
         width: 100%;
+        /* margin-bottom: -4rem; */
+        /* background-color: #a39c9c; */
+        height: 10px;
         contain: content;
-        margin-bottom: -4rem;
-        background-color: #a39c9c;
-        justify-content: start;
     }
 
 
-    .courses .course-card .card{
+    .courses .course-card1 .card1{
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
         font-size: 16px;
@@ -811,24 +810,23 @@ button:hover {
         contain:content;
     }
 
-    .courses .course-card :nth-child(1) p{
+    .courses .course-card1 :nth-child(1) p{
         margin-bottom: 2rem;
     }
-    .courses .course-card :nth-child(2) p{
-        margin-bottom: 2rem;
-    }
-
-
-    .courses .course-card :nth-child(3) p{
+    .courses .course-card1 :nth-child(2) p{
         margin-bottom: 2rem;
     }
 
-    .courses .course-card :hover{
+    .courses .course-card1 :nth-child(3) p{
+        margin-bottom: 2rem;
+    }
+
+    .courses .course-card1 :hover{
         transform: translateY(-0.5rem);
         transition-duration: 0.7s;
     }
 
-    .courses .course-card .card  h1{
+    .courses .course-card1 .card1  h1{
         font-size: 16px;
      }
     
