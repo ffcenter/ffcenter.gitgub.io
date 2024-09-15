@@ -40,7 +40,6 @@
 .nav-list-content {
     display:inline-flex ; 
     list-style-type: none;
-    
 }
 
 .nav-list {
@@ -502,12 +501,8 @@ button:hover {
          /* And */
   /* Media query for smaller screens */
 
-  #menu-btn {
-    display: none;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 500px) {
    
     .logo {
         display: none;
@@ -604,16 +599,26 @@ button:hover {
 
     /*----------------------- SOBRE NÓS SECTION  -------------------------*/
 
+    .img{
+        margin-bottom: 4rem;
+    }
     .Sobre_Nos{
-        background-color: rgb(255, 255, 255);
-        height: 370px ;
-        text-align: center;
-        margin-bottom: 7rem;
-        padding-bottom: 1rem;
+        background-color:white;
         width: 100%;
+        height: fit-content;
+        contain: content;
+        border: dotted rgb(142, 14, 222) 2px;
     }
     
-    .Sobre_Nos #about_text #hd{
+     #about_total {
+        display: inline-block;
+        background-color:white;
+        width: auto;
+        border-radius: 2rem;
+        margin-top: -4.5rem;
+    }
+
+    .Sobre_Nos #hd{
         font-size: 20px;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: blue;
@@ -623,14 +628,7 @@ button:hover {
     }
     
     /* sizing image and text in the same block*/
-    #about_total {
-        display: inline-block;
-        background-color: rgb(255, 255, 255);
-        width: auto;
-        border-radius: 2rem;
-        text-align: center; 
-    }
-    
+   
     /* Controlling the image in the about block*/
     #about_total #about_img{
         width: 200%;
@@ -661,31 +659,23 @@ button:hover {
         height: 49%;
     }
     
-    #about_total #about_text{
-       text-align: center;
-       width: 50;
-       background-color: rgb(255, 255, 255);
-       margin: 5px;
-       align-items: center;
-       border: dotted blue 1.2px;
-    }
-    
-    #about_total #about_text p{
+    #about_total  p{
         font-size: 16px;
         text-align:left;
         width: 50;
         background-color: rgb(255, 255, 255);
-        margin-left: 2px;
+        margin-left: 3px;
      }
 
-     /*=========== MEDIA QUERY ---POR QUE NO´S ESCOLHER SECTION ============== */
+
+    /*=========== MEDIA QUERY ---POR QUE NO´S ESCOLHER SECTION ============== */
 
     .Nos_Escolher{
-        text-align: center;
         border-radius: 10px;
-        background-color: rgb(255, 255, 255);
-        padding-bottom: 1rem;
+        background-color:rgb(39, 11, 11);
         width: 100%;
+        contain: content;
+        height: fit-content; 
     }
 
     .Nos_Escolher #hd{
@@ -696,46 +686,49 @@ button:hover {
         border-block: solid 0.2rem rgb(194, 194, 241);
         margin-right: 20%;
         margin-left: 20%;
+        margin-top: -4.5rem;
     }
 
+  
     .Nos_Escolher .course{
         align-items: center;
         border:solid dotted 1px;
         color: rgb(14, 2, 192);
-        text-align: center;
-        margin-top: -0.3rem;
-        
+        margin-top: 0.3rem;
+        contain: content;
+        background-color: #4caf50;
+        width: auto;
+        margin:0.1rem; 
     }
-    
+
     .Nos_Escolher .course-card{
         display:inline-table;
         justify-content: space-between;
         height: 99%;
         width: 99%;
         border-radius: 12px;
-        margin-bottom : 2rem;
-        
+        margin-bottom : 2rem;  
+        background-color: aquamarine; 
     }
     
-    
+     
     .Nos_Escolher .course-card :hover{
         transform: translateY(-0.5rem);
         transition-duration: 0.7s;
     }
     
-    
+     
     .Nos_Escolher .course .course-card .card{
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
         width: 100%;
         height: 90%;
         font-size: 14px;
-        /* margin: 5px; */
         border: dotted blue 1px;
-        margin-bottom : 2rem;
-       
+        margin-bottom : 1rem;
+        contain: content;
     }
-    
+   
     .Nos_Escolher .course .course-card .card  p{
         text-align: left;
         margin-right: 8px;
@@ -754,260 +747,11 @@ button:hover {
        font-size:18px;
        margin-bottom: 1rem;
     
-    }
+    } 
     
 
 
-    /* -----------Courses Section ---------------- */
-    .courses{
-        height: 100%;
-        color: rgb(14, 2, 192);
-        text-align: center;
-        margin-bottom: 2rem;
-        padding-top: 1rem;
-        background-color: rgb(255, 255, 255);
-    }
     
-
-
-    .courses #hd{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: blue;
-        border-block: solid 0.2rem rgb(194, 194, 241);
-        margin-right: 34%;
-        margin-left: 34%;
-        margin-bottom: 0.3rem;
-        font-size: 20px;
-    }
-
-
-    .courses .course-card .card  p{
-        text-align: left;
-        margin-right: 8px;
-        margin-left: 8px;
-        color: rgb(22, 21, 21);
-        text-wrap: balance;
-        font-size: 14px;
-    }
-    
-
-    .courses .course-card{
-        display: inline-table;
-        justify-content: space-between;
-        height: 100%;
-        margin-top: 1rem;
-        padding-bottom: 3.6rem;
-    }
-
-
-    .courses .course-card .card{
-        background-color: rgb(255, 255, 255);
-        border-radius: 2%;
-        font-size: 16px;
-        margin: 2px;
-        border: dotted blue 1px;
-        height: 100%;
-        width: 100%;
-        margin-bottom : 2rem;
-    }
-
-
-    .courses .course-card :nth-child(2) p{
-        margin-bottom: 5.5rem;
-    }
-
-
-    .courses .course-card :nth-child(3) p{
-        margin-bottom: 2.7rem;
-    }
-
-    .courses .course-card :hover{
-        transform: translateY(-0.5rem);
-        transition-duration: 0.7s;
-    }
-
-    .courses .course-card .card  h1{
-        font-size: 16px;
-     }
-
-
-
-  /*--------------Footer section----------------------------*/
-    .footer_all{
-        width: 100%;
-        height: fit-content;
-        /* background-color: bisque; */
-        display: flex;
-    }
-
-    .footer_all .left{
-        width: 50%;
-        
-    }
-
-    .footer_all .left .contato h3{
-        text-align: center;
-        padding: 1rem;
-        font-size: 20px;
-    }
-
-    .footer_all .left .contato #ptext {
-        margin: 0.3rem;
-        font: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .footer_all .left .contato #ptext h4{
-        word-break: break-word;
-        font-size: 15px;
-    }
-    .footer_all .left .contato #ptext h4 address{
-        word-break: break-word;
-        font-size: 14px;
-    }
-    
-
-
-    /* --------------Redes parte, Right side of the code---------------- */
-    .footer_all .redes{
-        width: 50%;
-        height: 300px;
-        right: 0;
-        
-    }
-
-    .footer_all .redes h3{
-        text-align: center;
-        padding: 1rem;
-        font-size: 20px;
-    }
-
-    .footer_all .redes .rede-img{
-       height:fit-content;
-       overflow-x: hidden;
-       text-wrap: balance;
-       display: block;
-    }
-    
-
-    .footer_all .redes .rede-img img{
-        border-radius: 100%;
-        height: 12%;
-        width: 12%;
-
-    }
-
-    .footer_all .redes .rede-img .rede_txt{
-       display: flex;
-       justify-content: space-evenly ;
-       margin-bottom: 1rem;
-       height: fit-content;
-
-    }
-    
-    .footer_all .redes .rede-img #face{
-        border-radius: 100%;
-        height: 12%;
-        width: 12%; 
-    }
-
-    .footer_all .redes .rede-img h5{
-        font-size: 70%;
-    }
-
-
-    .subsection {
-        bottom: 0;
-        text-align: centers;
-        justify-content: center;
-        margin-left: 30%;
-    }
-
-
-
-
-    /*-------------Media query--------Registration parte of he code---------------------- */
-    form {
-        max-width: 55%;
-        margin: 20px auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .container_reg label,#level {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-        text-align: left;
-        font-size: 10px;
-      }
-
-      .container_reg #fullName,#phone ,#email {
-        height: 11px;
-      }
-
-      input, select {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 15px;
-        box-sizing: border-box;
-      }
-      
-      button {
-        background-color: #4caf50;
-        color: white;
-        padding: 7px 12px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 12px;
-      }
-      
-      .logo_reg {
-          background-color: #ffffff;
-          border:dotted 1px blue;
-          height: 20%;
-          margin-top: 1rem;
-          width: 100%;
-          text-align: center;
-          background-color: #a39c9c;
-      }
-
-      .logo_reg .logo_center{
-        display: flex;
-        margin: 0.2rem;
-        justify-content: space-evenly;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-      }
-      
-      .logo_reg img{
-          width:30px;
-          height: 30px;
-          margin-left: 30%;
-          justify-content: space-around;
-          margin-right: 1rem;
-          border-radius: 100%;
-      }
-      
-      .logo_reg h2{
-          font-family:Georgia, 'Times New Roman', Times, serif;
-          font-size: 16px;
-          color: blue;
-          text-align: center;
-          margin-left: 0.8rem;
-      }
-
-    .container_reg h4{
-        font-size: 10px;
-    }
-      
-      button:hover {
-        background-color: #45a049;
-      }
 
 
   }
