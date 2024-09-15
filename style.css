@@ -759,13 +759,11 @@ button:hover {
     /* -----------Courses Section ---------------- */
     .courses{
         color: rgb(14, 2, 192);
-        text-align: center;
         padding-top: 0.2rem;
         contain:content;
         margin-top:-1.5rem;
     }
     
-
 
     .courses #hd{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -791,10 +789,10 @@ button:hover {
     .courses .course-card{
         display: inline-table;
         justify-content: space-between;
-        width: 98%;
-        height: -3%;
+        width: 100%;
         contain: content;
-        /* margin-bottom: -4rem; */
+        margin-bottom: -4rem;
+        margin-top: -4rem;
         background-color: #a39c9c;
     }
 
@@ -806,7 +804,7 @@ button:hover {
         margin: 2px;
         border: dotted blue 1.6px;
         width: 99%;
-        height: 20%;
+        height: 21%;
         margin-bottom : 1rem;
         contain:content;
     }
