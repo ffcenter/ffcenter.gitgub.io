@@ -804,7 +804,7 @@ button:hover {
         margin: 2px;
         border: dotted blue 1.6px;
         width: 99%;
-        height: 50px;
+        height: 20%;
         margin-bottom : 1rem;
         background-color: #634141;
         contain:content;
