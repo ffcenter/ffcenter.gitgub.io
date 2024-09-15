@@ -806,7 +806,6 @@ button:hover {
         width: 99%;
         height: 20%;
         margin-bottom : 1rem;
-        background-color: #634141;
         contain:content;
     }
 
@@ -839,7 +838,6 @@ button:hover {
         height: fit-content;
         display: flex;
         contain: content;
-        background-color: #4caf50;
     }
 
     .footer_all .left{
@@ -1002,13 +1000,6 @@ button:hover {
       button:hover {
         background-color: #45a049;
       }
-
-
-
-   
-
-
-
 
   }
 
