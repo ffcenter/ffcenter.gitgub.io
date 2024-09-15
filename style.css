@@ -754,7 +754,7 @@ button:hover {
         color: rgb(14, 2, 192);
         text-align: center;
         padding-top: 0.2rem;
-        background-color: rgb(54, 21, 21);
+        background-color: rgb(255, 255, 255);
         contain:content;
     }
     
@@ -778,7 +778,6 @@ button:hover {
         color: rgb(22, 21, 21);
         text-wrap: balance;
         font-size: 16px;
-        background-color: #654794;
     }
     
 
@@ -787,7 +786,7 @@ button:hover {
         justify-content: space-between;
         width: 98%;
         contain: content;
-        height: fit-content;
+        height: 20%;
         margin-bottom: -4rem;
     }
 
@@ -830,15 +829,13 @@ button:hover {
      .footer_all{
         width: 100%;
         height: fit-content;
-        /* background-color: bisque; */
         display: flex;
         contain: content;
         background-color: #4caf50;
     }
 
     .footer_all .left{
-        width: 50%;
-        
+        width: 57%;  
     }
 
     .footer_all .left .contato h3{
@@ -847,20 +844,17 @@ button:hover {
         font-size: 20px;
     }
 
-    .footer_all .left .contato #ptext {
-        margin: 0.3rem;
-        font: 18px;
+    .footer_all .left .contato #ptext h4{
+        text-align: center;
+        font-size: 18px;
+    }
+    .footer_all .left .contato #ptext p{
+        margin-left: 20%;
+        font: 17px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .footer_all .left .contato #ptext h4{
-        word-break: break-word;
-        font-size: 15px;
-    }
-    .footer_all .left .contato #ptext h4 address{
-        word-break: break-word;
-        font-size: 14px;
-    }
+   
 
 
 
