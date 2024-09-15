@@ -754,7 +754,7 @@ button:hover {
         color: rgb(14, 2, 192);
         text-align: center;
         padding-top: 0.2rem;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(54, 21, 21);
         contain:content;
     }
     
@@ -778,6 +778,7 @@ button:hover {
         color: rgb(22, 21, 21);
         text-wrap: balance;
         font-size: 16px;
+        background-color: #654794;
     }
     
 
