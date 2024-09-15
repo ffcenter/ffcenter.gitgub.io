@@ -703,7 +703,7 @@ button:hover {
         display:inline-table;
         justify-content: space-between;
         height: 300px;
-        width: 99%;
+        width: 98%;
         border-radius: 12px;
         margin-bottom : 2rem;  
         /* background-color: aquamarine;  */
@@ -722,7 +722,7 @@ button:hover {
         width: 98%;
         height: fit-content;
         font-size: 14px;
-        border: dotted blue 1px;
+        border: dotted blue 1.6px;
         margin-bottom : 1rem;
         contain: content;
     }
@@ -746,8 +746,118 @@ button:hover {
        margin-bottom: 1rem;
     
     } 
+
+
+    
+    /* -----------Courses Section ---------------- */
+    .courses{
+        color: rgb(14, 2, 192);
+        text-align: center;
+        padding-top: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        contain:content;
+    }
     
 
+
+    .courses #hd{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+        border-block: solid 0.2rem rgb(194, 194, 241);
+        margin-right: 34%;
+        margin-left: 34%;
+        margin-bottom: 0.3rem;
+        font-size: 20px;
+    }
+
+
+    .courses .course-card .card  p{
+        text-align: left;
+        margin-right: 8px;
+        margin-left: 8px;
+        color: rgb(22, 21, 21);
+        text-wrap: balance;
+        font-size: 14px;
+    }
+    
+
+    .courses .course-card{
+        display: inline-table;
+        justify-content: space-between;
+        width: 98%;
+        contain: content;
+        height: fit-content;
+        margin-bottom: -4rem;
+    }
+
+
+    .courses .course-card .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: 2%;
+        font-size: 16px;
+        margin: 2px;
+        border: dotted blue 1.6px;
+        height: 100%;
+        width: 99%;
+        margin-bottom : 1rem;
+    }
+
+    .courses .course-card :nth-child(1) p{
+        margin-bottom: 2rem;
+    }
+    .courses .course-card :nth-child(2) p{
+        margin-bottom: 2rem;
+    }
+
+
+    .courses .course-card :nth-child(3) p{
+        margin-bottom: 2rem;
+    }
+
+    .courses .course-card :hover{
+        transform: translateY(-0.5rem);
+        transition-duration: 0.7s;
+    }
+
+    .courses .course-card .card  h1{
+        font-size: 16px;
+     }
+    
+
+
+/*--------------Footer section----------------------------*/
+     .footer_all{
+        width: 100%;
+        height: fit-content;
+        /* background-color: bisque; */
+        display: flex;
+    }
+
+    .footer_all .left{
+        width: 50%;
+        
+    }
+
+    .footer_all .left .contato h3{
+        text-align: center;
+        padding: 1rem;
+        font-size: 20px;
+    }
+
+    .footer_all .left .contato #ptext {
+        margin: 0.3rem;
+        font: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer_all .left .contato #ptext h4{
+        word-break: break-word;
+        font-size: 15px;
+    }
+    .footer_all .left .contato #ptext h4 address{
+        word-break: break-word;
+        font-size: 14px;
+    }
 
 
 
