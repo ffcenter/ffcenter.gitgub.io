@@ -762,6 +762,7 @@ button:hover {
         padding-top: 0.2rem;
         contain:content;
         margin-top:-1.5rem;
+        background-color: #654794;
     }
     
 
@@ -783,6 +784,7 @@ button:hover {
         color: rgb(22, 21, 21);
         text-wrap: balance;
         font-size: 16px;
+
     }
     
 
@@ -792,8 +794,8 @@ button:hover {
         width: 100%;
         contain: content;
         margin-bottom: -4rem;
-        margin-top: -4rem;
         background-color: #a39c9c;
+        justify-content: start;
     }
 
 
