@@ -41,13 +41,59 @@
         </div>
       </div>
     </div>
-    
+
 
    <!----------------- Header ends here ------------------>
     <main>
       <div class="img">
         <img src="images/landing pade.png" alt="landpage" />
       </div>
+
+
+      <!--------------- Slide show Section ---------------------------------->
+   
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="slideshow_images/Anu11.png" style="width:100%">
+        </div>
+      
+        <!-- <div class="mySlides fade">
+          <img src="slideshow_images/Anu1.png" style="width:100%">
+        </div> -->
+
+        <div class="mySlides fade">
+          <img src="slideshow_images/Anu12.png" style="width:100%">
+        </div>
+      
+        <!-- <div class="mySlides fade">
+          <video width="100%" controls>
+            <source src="slideshow_images/slideshow1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+      
+        <div class="mySlides fade">
+          <img src="images/logo.png" style="width:100%">
+        </div>
+
+        <div  class="next-prenext">
+          <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+          <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+        </div>
+        
+
+        <div style="text-align:center" class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+      
+      
+      
+      
+      
 
       <!---Sobre nos part of the code--->
       <div id="Sobre_Nos" class="Sobre_Nos">
@@ -192,7 +238,9 @@
             </div>
             <div id="ptext">
               <h4> Email </h4> 
+              <a>
                 <pp>FlexFluencyCenter60@gmail.com</pp>
+              </a>
             </div>
           </div>
         </div>
@@ -214,7 +262,7 @@
                 <h5>Instagram</h5>
               </div>
             </a>
-            <a href="http:\\whatsapp.com">
+            <a  id = "whatsappIcon" target="_blank">
               <div class="rede_txt">
                 <img src="images/whats.jpg" alt="img"> 
                 <h5>whatsapp</h5>
@@ -262,6 +310,51 @@
 
    
   </script>
+
+<script>
+  // 31975300546
+  document.getElementById('whatsappIcon').addEventListener('click', function() {
+      const phoneNumber = '31975621683'; // e.g., '1234567890'
+      const message = 'Olá, Gostaria de conhecer mais sobre a escola e os cursos fornecidos, Obrigado!';
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+  });
+</script>
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Change slide every 2 seconds
+  setInterval(() => {
+    showSlides(slideIndex += 1);
+  }, 5000);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";  
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
 
 </body>
 </html>

@@ -1003,5 +1003,46 @@ button:hover {
 
   }
 
+.slideshow-container{
+    max-height:380px;
+    margin-top: 1rem;
+    margin-bottom : 1rem;
+    /* background-color: #d2dfd2; */
+    text-align :center;
+    cursor: pointer;
+}
 
+.next-prenext{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* background-color:red; */
+    height: 20px;
+    margin-top:0.3rem ;
+    margin-bottom:2rem ;
+}
+
+.next-prenext a{
+    size: 200px;
+    zoom: 1.2;
+    color: rgb(198, 215, 44);
+    padding-right:3rem;
+    padding-left:3rem;
+    background-color:rgb(110, 0, 169);
+   
+}
+
+.mySlides {
+display: none; /* Hide all slides initially */
+position: relative; /* Position for absolute children */
+height: 100%;
+}
+
+.mySlides img,
+.mySlides video {
+width: 100%;
+height: auto; /* Maintain aspect ratio */
+max-height: 300px;
+}
 
