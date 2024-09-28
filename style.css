@@ -150,8 +150,10 @@ a {
     text-align: center;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    margin-top: 50px;
+    contain: content;
 }
 
 .Nos_Escolher #hd{
@@ -216,27 +218,27 @@ a {
 
 
 .Nos_Escolher .course .course-card .card .space_1{
-    height: 2rem;
+    height: 3rem;
  }
  
 .Nos_Escolher .course .course-card .card .space_2{
-    height: 3rem;
+    height: 4.2rem;
  }
  
 .Nos_Escolher .course .course-card .card .space_3{
-    height: 3rem;
+    height: 3.4rem;
  }
  
  
 .Nos_Escolher .course .course-card .card .space_4{
-    height: 4.6rem;
+    height: 4.8rem;
  }
  
 
 
 .Nos_Escolher .course .course-card .card h3{
    font-size: 30px;
-   margin-bottom: -1rem;
+   
 }
 
 /* -----------Courses Here---------------- */
@@ -246,9 +248,7 @@ a {
     color: rgb(14, 2, 192);
     text-align: center;
     margin-bottom: 2rem;
-    padding-top: 3rem;
-    background-color: rgb(255, 255, 255);
-   
+    /* background-color: rgb(201, 137, 137);   */
 }
 
 .courses .card-flex{
@@ -279,9 +279,9 @@ a {
 .courses .course-card1{
     display: flex;
     justify-content: space-between;
-    height: 350px;
-    margin-top: 1rem;
-    padding-bottom: 3.6rem;
+    height: 365px;
+    /* margin-top: 1rem; */
+    padding-bottom: 1rem;
     height: 100%;
     text-wrap: wrap;
    
@@ -351,6 +351,9 @@ a {
     height: 98%;
 }
 
+.dots{
+    cursor: pointer;
+}
 
 
 .mySlides img,
@@ -750,8 +753,10 @@ button:hover {
     .Nos_Escolher{
         border-radius: 10px;
         width: 100%;
-        contain: content;
         height: fit-content; 
+        contain: content;
+        /* background-color: #4caf50; */
+       
     }
 
     .Nos_Escolher #hd{
@@ -762,7 +767,6 @@ button:hover {
         border-block: solid 0.2rem rgb(194, 194, 241);
         margin-right: 20%;
         margin-left: 20%;
-        margin-top: -4.5rem;
     }
 
   
@@ -770,7 +774,7 @@ button:hover {
         align-items: center;
         border:solid dotted 1px;
         color: rgb(14, 2, 192);
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
         contain: content;
         width: auto;
         margin:0.1rem; 
@@ -779,7 +783,7 @@ button:hover {
     .Nos_Escolher .course-card{
         display:inline-table;
         justify-content: space-between;
-        height: 300px;
+        height: 360px;
         width: 98%;
         border-radius: 12px;  
     }
@@ -798,7 +802,7 @@ button:hover {
         font-size: 16px;
         border: dotted blue 1.6px;
         contain: content;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
    
     .Nos_Escolher .course .course-card .card  p{
@@ -826,10 +830,8 @@ button:hover {
     /* -----------Courses Section ---------------- */
     .courses{
         color: rgb(14, 2, 192);
-        padding-top: 0.2rem;
         contain:content;
-        margin-top:-1.5rem;
-        /* background-color: #654794; */
+        /* background-color: #b9a6d7; */
     }
     
 
@@ -858,8 +860,6 @@ button:hover {
     .courses .course-card1{
         display: inline-table;
         width: 100%;
-        /* margin-bottom: -4rem; */
-        /* background-color: #a39c9c; */
         height: 10px;
         contain: content;
     }
@@ -869,23 +869,22 @@ button:hover {
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
         font-size: 16px;
-        margin: 2px;
         border: dotted blue 1.6px;
         width: 99%;
         height: 21%;
-        margin-bottom : 1rem;
+        margin-bottom : 0.8rem;
         contain:content;
     }
 
     .courses .course-card1 :nth-child(1) p{
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
     }
     .courses .course-card1 :nth-child(2) p{
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
     }
 
     .courses .course-card1 :nth-child(3) p{
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
     }
 
     .courses .course-card1 :hover{
@@ -1073,8 +1072,10 @@ button:hover {
         margin-bottom : 1rem;
         /* background-color: #d2dfd2; */
         text-align :center;
-        cursor: pointer;
         contain: content;
+    }
+    .dots{
+        cursor: pointer;
     }
       .mySlides img,
       .mySlides video {
